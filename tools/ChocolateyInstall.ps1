@@ -7,7 +7,7 @@ try {
 	}
 
     Write-Host "Installing MS TFS Express"
-	Install-ChocolateyPackage 'VisualStudioTFSExpress2013' 'exe' "/Quiet" 'http://download.microsoft.com/download/1/D/4/1D4802FE-5971-4A27-8E42-87EE5ACE8777/tfs_express.exe'
+	Install-ChocolateyPackage 'VisualStudioTFSExpress2013' 'exe' "/Quiet" 'http://download.microsoft.com/download/D/F/C/DFCAAA9B-7902-4445-A746-0EFD0E09AC2D/tfs_express.exe'
 	
 	Write-Host "Getting TFSConfig full path"
 	$path = (Get-ChildItem -path $env:systemdrive\ -filter "tfsconfig.exe" -erroraction silentlycontinue  -recurse)[0].FullName
